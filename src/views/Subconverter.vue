@@ -217,6 +217,8 @@ export default {
         clientTypes: {
           Clash: "clash",
           Surge: "surge&ver=4",
+          "Surge 5 IOS": "surge-ios&ver=5",
+          "Surge 5 MacOS": "surge-macos&ver=5",
           Quantumult: "quan",
           QuantumultX: "quanx",
           Mellow: "mellow",
@@ -649,6 +651,9 @@ export default {
           // Set the client type based on the 'target' parameter
           if (target === "surge") {
             const ver = params.get("ver") || "4";
+            this.form.clientType = target + "&ver=" + ver;
+          } else if (target === "surge-ios" || target === "surge-macos") {
+            const ver = params.get("ver") || "5";
             this.form.clientType = target + "&ver=" + ver;
           } else {
             this.form.clientType = target;
