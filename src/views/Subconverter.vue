@@ -219,6 +219,7 @@ export default {
           Surge: "surge&ver=4",
           "Surge 5 IOS": "surge-ios&ver=5",
           "Surge 5 MacOS": "surge-macos&ver=5",
+          "Surge 6": "surge&ver=6",
           Quantumult: "quan",
           QuantumultX: "quanx",
           Mellow: "mellow",
